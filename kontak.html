@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sekolah</title>
+    <!-- Scripts -->
+    <script src="http://127.0.0.1:8000/js/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="vendors/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/app.css?id=1d3a8387154f93256beb">
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/home"><i class="uil uil-home"></i>Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="uil uil-blogger"></i>Profile</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/Tentang">About</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/sejarah">History</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/visi-misi">Vision and mission</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/guru"><i class="uil uil-bag"></i>Teacher</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/berita"><i class="uil uil-phone"></i>News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/galeri"><i class="uil uil-info-circle"></i>Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/kontak"><i class="uil uil-info-circle"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mb-3">
+            <h1>Kontak Kami</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="item-text">
+                    <div class="item-text__title">Alamat</div>
+                    <div class="item-text__main">
+                        <p>Karanganyar,Jawa Tengah,Indonesia</p>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-text__title">Email</div>
+                    <div class="item-text__main">
+                        <p>sekolahku@gmail.com</p>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-text__title">Whatsapp</div>
+                    <div class="item-text__main">
+                        <p>085602678871
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+
+                <h5>Kirim pesan</h5>
+
+                <div class="mb-3">Halo silahkan jika ada yang ditanyakan atau untuk mengirim kritik dan saran</div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="">
+                    <label for="name">Nama Lengkap</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" name="phone" inputmode="tel" placeholder="">
+                    <label for="phone">Nomor Telp/ WhatsApp</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="" id="isi-pesan" style="height: 200px"></textarea>
+                    <label for="isi-pesan">Isi Pesan</label>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ratio ratio-16x9 mt-4" style="--bs-aspect-ratio: 300px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15819.549735348359!2d110.9519918!3d-7.5872298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9c84052b95a73cb!2sPT.%20Kusuma%20Kreasi%20Utama!5e0!3m2!1sen!2sid!4v1644391270549!5m2!1sen!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <div class="web-footer bg-light mt-5">
+        <div class="card-footer text-muted">
+            <footer class="footer_area section_padding_130_0">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Footer Logo-->
+                                <div class="footer-logo mb-3"></div>
+                                <h3>MySchool</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, ipsam.
+                                </p>
+                                <!-- Copywrite Text-->
+                                <div class="copywrite-text mb-5">
+                                    <p class="mb-0">Designed <i class="lni-heart mr-1"></i>by<a class="ml-1" href="#">BootstrapMade</a></p>
+                                </div>
+                                <!-- Footer Social Area-->
+                                <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Usefull Links</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="http://127.0.0.1:8000/home#">Home</a></li>
+                                        <li><a href="http://127.0.0.1:8000/guru#">About Teacher</a></li>
+                                        <li><a href="http://127.0.0.1:8000/berita#">News</a></li>
+                                        <li><a href="http://127.0.0.1:8000/galeri#">Gallery</a></li>
+                                        <li><a href="http://127.0.0.1:8000/kontak#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Support</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Term &amp; Conditions</a></li>
+                                        <li><a href="#">Help &amp; Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Contact</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="#">Call Center</a></li>
+                                        <li><a href="#">Email Us</a></li>
+                                        <li><a href="#">Term &amp; Conditions</a></li>
+                                        <li><a href="#">Help Center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .footer_area .row {
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+        
+        .footer_area .row .col,
+        .footer_area .row .col-1,
+        .footer_area .row .col-10,
+        .footer_area .row .col-11,
+        .footer_area .row .col-12,
+        .footer_area .row .col-2,
+        .footer_area .row .col-3,
+        .footer_area .row .col-4,
+        .footer_area .row .col-5,
+        .footer_area .row .col-6,
+        .footer_area .row .col-7,
+        .footer_area .row .col-8,
+        .footer_area .row .col-9,
+        .footer_area .row .col-auto,
+        .footer_area .row .col-lg,
+        .footer_area .row .col-lg-1,
+        .footer_area .row .col-lg-10,
+        .footer_area .row .col-lg-11,
+        .footer_area .row .col-lg-12,
+        .footer_area .row .col-lg-2,
+        .footer_area .row .col-lg-3,
+        .footer_area .row .col-lg-4,
+        .footer_area .row .col-lg-5,
+        .footer_area .row .col-lg-6,
+        .footer_area .row .col-lg-7,
+        .footer_area .row .col-lg-8,
+        .footer_area .row .col-lg-9,
+        .footer_area .row .col-lg-auto,
+        .footer_area .row .col-md,
+        .footer_area .row .col-md-1,
+        .footer_area .row .col-md-10,
+        .footer_area .row .col-md-11,
+        .footer_area .row .col-md-12,
+        .footer_area .row .col-md-2,
+        .footer_area .row .col-md-3,
+        .footer_area .row .col-md-4,
+        .footer_area .row .col-md-5,
+        .footer_area .row .col-md-6,
+        .footer_area .row .col-md-7,
+        .footer_area .row .col-md-8,
+        .footer_area .row .col-md-9,
+        .footer_area .row .col-md-auto,
+        .footer_area .row .col-sm,
+        .footer_area .row .col-sm-1,
+        .footer_area .row .col-sm-10,
+        .footer_area .row .col-sm-11,
+        .footer_area .row .col-sm-12,
+        .footer_area .row .col-sm-2,
+        .footer_area .row .col-sm-3,
+        .footer_area .row .col-sm-4,
+        .footer_area .row .col-sm-5,
+        .footer_area .row .col-sm-6,
+        .footer_area .row .col-sm-7,
+        .footer_area .row .col-sm-8,
+        .footer_area .row .col-sm-9,
+        .footer_area .row .col-sm-auto,
+        .footer_area .row .col-xl,
+        .footer_area .row .col-xl-1,
+        .footer_area .row .col-xl-10,
+        .footer_area .row .col-xl-11,
+        .footer_area .row .col-xl-12,
+        .footer_area .row .col-xl-2,
+        .footer_area .row .col-xl-3,
+        .footer_area .row .col-xl-4,
+        .footer_area .row .col-xl-5,
+        .footer_area .row .col-xl-6,
+        .footer_area .row .col-xl-7,
+        .footer_area .row .col-xl-8,
+        .footer_area .row .col-xl-9,
+        .footer_area .row .col-xl-auto {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        
+        .single-footer-widget {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .single-footer-widget .copywrite-text a {
+            color: #747794;
+            font-size: 1rem;
+        }
+        
+        .single-footer-widget .copywrite-text a:hover,
+        .single-footer-widget .copywrite-text a:focus {
+            color: #3f43fd;
+        }
+        
+        .single-footer-widget .widget-title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .single-footer-widget .footer_menu li a {
+            color: #747794;
+            margin-bottom: 1rem;
+            display: block;
+            font-size: 1rem;
+        }
+        
+        .single-footer-widget .footer_menu li a:hover,
+        .single-footer-widget .footer_menu li a:focus {
+            color: #3f43fd;
+        }
+        
+        .single-footer-widget .footer_menu li:last-child a {
+            margin-bottom: 0;
+        }
+        
+        .footer_social_area {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer_social_area a {
+            border-radius: 50%;
+            height: 40px;
+            text-align: center;
+            width: 40px;
+            display: inline-block;
+            background-color: #f5f5ff;
+            line-height: 40px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-right: 10px;
+        }
+        
+        .footer_social_area a i {
+            line-height: 36px;
+        }
+        
+        .footer_social_area a:hover,
+        .footer_social_area a:focus {
+            color: #ffffff;
+        }
+        
+        @-webkit-keyframes bi-cycle {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        @keyframes bi-cycle {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        ol li,
+        ul li {
+            list-style: none;
+        }
+        
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <script src="http://127.0.0.1:8000/js/app.js?id=f07ca98c78762271d598"></script>
+    <script src="http://127.0.0.1:8000/js/app.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sekolah</title>
+    <!-- Scripts -->
+    <script src="http://127.0.0.1:8000/js/app.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="vendors/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://127.0.0.1:8000/css/app.css?id=1d3a8387154f93256beb">
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/home"><i class="uil uil-home"></i>Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="uil uil-blogger"></i>Profile</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/Tentang">About</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/sejarah">History</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/page/visi-misi">Vision and mission</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/guru"><i class="uil uil-bag"></i>Teacher</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/berita"><i class="uil uil-phone"></i>News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/galeri"><i class="uil uil-info-circle"></i>Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/kontak"><i class="uil uil-info-circle"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="text-center mb-3">
+            <h1>Kontak Kami</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="item-text">
+                    <div class="item-text__title">Alamat</div>
+                    <div class="item-text__main">
+                        <p>Karanganyar,Jawa Tengah,Indonesia</p>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-text__title">Email</div>
+                    <div class="item-text__main">
+                        <p>sekolahku@gmail.com</p>
+                    </div>
+                </div>
+                <div class="item-text">
+                    <div class="item-text__title">Whatsapp</div>
+                    <div class="item-text__main">
+                        <p>085602678871
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+
+                <h5>Kirim pesan</h5>
+
+                <div class="mb-3">Halo silahkan jika ada yang ditanyakan atau untuk mengirim kritik dan saran</div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="">
+                    <label for="name">Nama Lengkap</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" name="phone" inputmode="tel" placeholder="">
+                    <label for="phone">Nomor Telp/ WhatsApp</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="" id="isi-pesan" style="height: 200px"></textarea>
+                    <label for="isi-pesan">Isi Pesan</label>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ratio ratio-16x9 mt-4" style="--bs-aspect-ratio: 300px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15819.549735348359!2d110.9519918!3d-7.5872298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe9c84052b95a73cb!2sPT.%20Kusuma%20Kreasi%20Utama!5e0!3m2!1sen!2sid!4v1644391270549!5m2!1sen!2sid"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <div class="web-footer bg-light mt-5">
+        <div class="card-footer text-muted">
+            <footer class="footer_area section_padding_130_0">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Footer Logo-->
+                                <div class="footer-logo mb-3"></div>
+                                <h3>MySchool</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, ipsam.
+                                </p>
+                                <!-- Copywrite Text-->
+                                <div class="copywrite-text mb-5">
+                                    <p class="mb-0">Designed <i class="lni-heart mr-1"></i>by<a class="ml-1" href="#">BootstrapMade</a></p>
+                                </div>
+                                <!-- Footer Social Area-->
+                                <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Usefull Links</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="http://127.0.0.1:8000/home#">Home</a></li>
+                                        <li><a href="http://127.0.0.1:8000/guru#">About Teacher</a></li>
+                                        <li><a href="http://127.0.0.1:8000/berita#">News</a></li>
+                                        <li><a href="http://127.0.0.1:8000/galeri#">Gallery</a></li>
+                                        <li><a href="http://127.0.0.1:8000/kontak#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Support</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Term &amp; Conditions</a></li>
+                                        <li><a href="#">Help &amp; Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Widget-->
+                        <div class="col-12 col-sm-6 col-lg">
+                            <div class="single-footer-widget section_padding_0_130">
+                                <!-- Widget Title-->
+                                <h5 class="widget-title">Contact</h5>
+                                <!-- Footer Menu-->
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="#">Call Center</a></li>
+                                        <li><a href="#">Email Us</a></li>
+                                        <li><a href="#">Term &amp; Conditions</a></li>
+                                        <li><a href="#">Help Center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <style type="text/css">
+        .footer_area .row {
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+        
+        .footer_area .row .col,
+        .footer_area .row .col-1,
+        .footer_area .row .col-10,
+        .footer_area .row .col-11,
+        .footer_area .row .col-12,
+        .footer_area .row .col-2,
+        .footer_area .row .col-3,
+        .footer_area .row .col-4,
+        .footer_area .row .col-5,
+        .footer_area .row .col-6,
+        .footer_area .row .col-7,
+        .footer_area .row .col-8,
+        .footer_area .row .col-9,
+        .footer_area .row .col-auto,
+        .footer_area .row .col-lg,
+        .footer_area .row .col-lg-1,
+        .footer_area .row .col-lg-10,
+        .footer_area .row .col-lg-11,
+        .footer_area .row .col-lg-12,
+        .footer_area .row .col-lg-2,
+        .footer_area .row .col-lg-3,
+        .footer_area .row .col-lg-4,
+        .footer_area .row .col-lg-5,
+        .footer_area .row .col-lg-6,
+        .footer_area .row .col-lg-7,
+        .footer_area .row .col-lg-8,
+        .footer_area .row .col-lg-9,
+        .footer_area .row .col-lg-auto,
+        .footer_area .row .col-md,
+        .footer_area .row .col-md-1,
+        .footer_area .row .col-md-10,
+        .footer_area .row .col-md-11,
+        .footer_area .row .col-md-12,
+        .footer_area .row .col-md-2,
+        .footer_area .row .col-md-3,
+        .footer_area .row .col-md-4,
+        .footer_area .row .col-md-5,
+        .footer_area .row .col-md-6,
+        .footer_area .row .col-md-7,
+        .footer_area .row .col-md-8,
+        .footer_area .row .col-md-9,
+        .footer_area .row .col-md-auto,
+        .footer_area .row .col-sm,
+        .footer_area .row .col-sm-1,
+        .footer_area .row .col-sm-10,
+        .footer_area .row .col-sm-11,
+        .footer_area .row .col-sm-12,
+        .footer_area .row .col-sm-2,
+        .footer_area .row .col-sm-3,
+        .footer_area .row .col-sm-4,
+        .footer_area .row .col-sm-5,
+        .footer_area .row .col-sm-6,
+        .footer_area .row .col-sm-7,
+        .footer_area .row .col-sm-8,
+        .footer_area .row .col-sm-9,
+        .footer_area .row .col-sm-auto,
+        .footer_area .row .col-xl,
+        .footer_area .row .col-xl-1,
+        .footer_area .row .col-xl-10,
+        .footer_area .row .col-xl-11,
+        .footer_area .row .col-xl-12,
+        .footer_area .row .col-xl-2,
+        .footer_area .row .col-xl-3,
+        .footer_area .row .col-xl-4,
+        .footer_area .row .col-xl-5,
+        .footer_area .row .col-xl-6,
+        .footer_area .row .col-xl-7,
+        .footer_area .row .col-xl-8,
+        .footer_area .row .col-xl-9,
+        .footer_area .row .col-xl-auto {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        
+        .single-footer-widget {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .single-footer-widget .copywrite-text a {
+            color: #747794;
+            font-size: 1rem;
+        }
+        
+        .single-footer-widget .copywrite-text a:hover,
+        .single-footer-widget .copywrite-text a:focus {
+            color: #3f43fd;
+        }
+        
+        .single-footer-widget .widget-title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .single-footer-widget .footer_menu li a {
+            color: #747794;
+            margin-bottom: 1rem;
+            display: block;
+            font-size: 1rem;
+        }
+        
+        .single-footer-widget .footer_menu li a:hover,
+        .single-footer-widget .footer_menu li a:focus {
+            color: #3f43fd;
+        }
+        
+        .single-footer-widget .footer_menu li:last-child a {
+            margin-bottom: 0;
+        }
+        
+        .footer_social_area {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer_social_area a {
+            border-radius: 50%;
+            height: 40px;
+            text-align: center;
+            width: 40px;
+            display: inline-block;
+            background-color: #f5f5ff;
+            line-height: 40px;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-right: 10px;
+        }
+        
+        .footer_social_area a i {
+            line-height: 36px;
+        }
+        
+        .footer_social_area a:hover,
+        .footer_social_area a:focus {
+            color: #ffffff;
+        }
+        
+        @-webkit-keyframes bi-cycle {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        @keyframes bi-cycle {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        ol li,
+        ul li {
+            list-style: none;
+        }
+        
+        ol,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <script src="http://127.0.0.1:8000/js/app.js?id=f07ca98c78762271d598"></script>
+    <script src="http://127.0.0.1:8000/js/app.js"></script>
+</body>
+
+</html>
